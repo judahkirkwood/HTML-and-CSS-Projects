@@ -1,0 +1,6 @@
+This is my text file
+This is my second line of text
+This is a new line of text
+Adding another modification to file 1
+This is a new line of text
+Correct line of text
