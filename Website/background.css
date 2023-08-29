@@ -1,0 +1,8 @@
+/* styles.css */
+.container {
+    background-image: url('images/Thumb/barrel_background.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Adjust how the image is displayed */
+    background-position: center; /* Position of the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    /* Add any other styling for the container */
+}
