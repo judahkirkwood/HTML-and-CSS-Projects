@@ -1,0 +1,40 @@
+/*---------------------------------------------------------------
+      INDIVIDUALLY SELECT A SQUARE IN THE ARRAY
+---------------------------------------------------------------*/
+.square:nth-child(1) {
+    background: #4240ff;
+}
+
+.square:nth-child(2) {
+    background: #ab3fdd;
+}
+
+.square:nth-child(3) {
+    background: #ae163e;
+}
+
+.square:nth-child(4) {
+    background: #00b200;
+}
+
+/*---------------------------------------------------------------
+      HOVER EFFECTS
+---------------------------------------------------------------*/
+.container .squares:nth-child(-n+4):hover{
+    background-image: url("../images/icons/smileyface1.png")
+}
+.square:nth-child(1):hover {
+    background: #13b4ff;
+}
+
+.square:nth-child(2):hover {
+    background: #d861af;
+}
+
+.square:nth-child(3):hover {
+    background: #81205f;
+}
+
+.square:nth-child(4):hover {
+    background: #77b800;
+}
