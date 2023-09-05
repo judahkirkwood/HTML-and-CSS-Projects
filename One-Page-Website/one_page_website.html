@@ -1,88 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		    <meta charset="UTF-8">
-		<title>Custom Whiskey Cabinets</title>
-		<link rel="stylesheet" href=".One-Page-Website.css/style_template.css">
+		<meta charset="UTF-8">
+		<title>Custom Whiskey Cabinets </title>
+		<link rel="stylesheet" href="./css/one-page-style.css">
+		<link rel="stylesheet" href="./css/one-page-animation.css">
 	</head>
 	<body>
-	
-		<!-- NAV -->
-		<div>
-			<div>
-				<ul>
-					<a href="#home" id="link"><li>HOME</li></a>
-					<a href="#gallery" id="link"><li>GALLERY</li></a>
-					<a href="#contact" id="link"><li>CONTACT</li></a>
+		<!--NAV-->
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="home"><li>HOME</li></a>
+					<a href="gallery"><li>GALLERY</li></a>
+					<a href="contact"><li>CONTACT</li></a>
 				</ul>
 			</div>
 		</div>
-		<!--END NAV -->
+		<!--END NAV-->
 		
 		<!-- HOME -->
 		<div id="home">
-			<div>
-				<div>
-					<span><h1>PNW Custom Whiskey Cabinets</h1></span>
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">PNW Custom Whiskey Cabinets</span>
 				</div>
 			</div>
 		</div>
 		<!-- END HOME -->
-		<br>
-		<br>
+
+
 		<!-- GALLERY -->
-		<section>
-			<div id="gallery">
-				<h2>Gallery</h2>
-				<div>
+		<section id="gallery">
+			<div class="container">
+				<h1>Gallery</h1>
+					<div class="flex-container">
+						
+					
+					<!--PHOTO CONTAINER 1-->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./one_page_images/thumbnail_12.jpg" alt="">
+							<div class="photo-overlay">
+								
+							</div>
+						</div>
+					</div>
+		<!--END PHOTO CONTAINER 1-->
+		
+		<!--PHOTO CONTAINER 2-->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./one_page_images/thumbnail_13.jpg" alt="">
+							<div class="photo-overlay">
+					
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!--PHOTO CONTAINER 2-->
+
 		<!-- END GALLERY -->
-				
-					<!-- PHOTO CONTAINER 1 -->
-					<div>
-						<div>
-							<img src="./one_page_images/thumbnail_12.jpg" alt="Picture of a custom whiskey cabinet">
-							<div>
-								<p><em>Some custom cabinet ideas.</em></p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 1 -->
 					
-					<!-- PHOTO CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="./one_page_images/thumbnail_13.jpg" alt="Picture of a custom whiskey cabinet">
-							<div>
-								<p><em>Some custom cabinet ideas.</em></p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 2 -->
-					
-					<!-- Video -->
-				<iframe width="703" height="395" src="https://www.youtube.com/embed/HBKra8ZiFhk" 
+		<!-- Video -->
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<p><center>Here is how we make our cabinets.</center></p>
+
+		<br>
+		<br>
+
+				<center><iframe width="703" height="395" src="https://www.youtube.com/embed/HBKra8ZiFhk" 
 				title="How to Build a Mid Century Modern Liquor Bar // Woodworking" frameborder="0" 
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-				web-share" allowfullscreen></iframe>
-		</section>	<!-- END VIDEO -->
+				web-share" allowfullscreen></iframe></center>	
 		
+		<!-- END VIDEO -->
+
 		<!-- CONTACT -->
-		<section>
-			<div id="contact">
-				<div>
-					<h2>Contact</h2>
-					<div>
+		<section id="contact">
+			<div class="heading-padding">
+				<h1 class="heading-padding">Contact</h1>
+				<div class="reservation">
+					<h2>
+						<span>Your cabinet to show off your collection awaits.</span>
+						</br>Contact us today to let us know how we can help your cabinet dreams come true!
+					</h2>
+					<p class="rsvp-text"><center>Enter contact information below.</center></p>
+					<div class="form-rsvp">
 						<form action="" method="post">
 							<input class="rsvp" type="text" value="First Name">
 							<input class="rsvp" type="text" value="Last Name">
 							<input class="rsvp" type="text" value="Email Address">
 							<input class="rsvp" type="text" value="Phone Number">
 							<div class="form-spacer">
-								<label class="terms">Contact us so we can find out what your cabinet needs are.</label>
+								<label class="terms">Terms and Conditions</label>
 							</div>
-							<br>
-							<div>
-								<input type="submit" value="Submit">
+							<div class="submit">
+								<input type="submit" value="submit">
 							</div>
 						</form>
 					</div>
@@ -90,10 +111,11 @@
 			</div>
 		</section>
 		<!-- END CONTACT -->
+
 		<br>
 		<br>
 		<!-- FOOTER -->
-		<div>
+		<div id="footer">
 			www.pnwcustomwhiskeycabinets.com &nbsp;|&nbsp; &copy;PNW Custom Whiskey Cabinets 2023
 		</div>
 		<!-- END FOOTER-->
