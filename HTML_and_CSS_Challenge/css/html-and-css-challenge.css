@@ -1,0 +1,203 @@
+
+.img {
+    max-width: 100%;
+    filter: grayscale(80%);
+    box-shadow: 8px 8px 10px light-gray;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px gray;
+
+    }
+
+    .img-hover {
+        
+    }
+
+    .container {
+        position: relative;
+        width: 50%;
+      }
+      
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #40575e;
+      }
+      
+      .container:hover .overlay {
+        opacity: 1;
+      }
+      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+     
+
+    .container {
+        position: relative;
+        text-align: bottom-left;
+        color:#fff;
+    }
+
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+    }
+
+    .video-container {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+    }
+ 
+    video {
+        width: 100%;
+        height: auto;
+    }
+ 
+    .text-overlay {
+        position: absolute;
+        top: 0; /* Place the text at the top */
+        left: 0; /* Place the text at the left */
+        text-align: left; /* Align text to the left */
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+    }
+ 
+    /* Additional styles for text */
+    h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+ 
+    p {
+        font-size: 18px;
+        margin-top: 0;
+    }
+    
+
+    
+    .footer {
+    text-align: center;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px gray;
+    }
+
+    .custom-table {
+        border: 1px solid #000; 
+        border-collapse: collapse; 
+        width: 100%;
+        background-color: #f0f0f0; 
+    }
+    
+    .custom-table th {
+        background-color: #333;
+        color: #fff; 
+        padding: 10px;
+        box-shadow: 8px 8px 10px gray;
+    }
+ 
+    .custom-table td {
+        padding: 10px;
+        border: 1px solid #000;
+        box-shadow: 8px 8px 10px gray;
+    }
+
+    .text-overlay {
+        position:absolute;
+        top: 100%;
+        left: 25%;
+        transform: translate(50%, -50%);
+        background-color: rgba(0, 0, 0, 0);
+        padding: 20px;
+        color: #fff
+    }
+
+    .text-overlay h2 {
+        margin: 5;
+        font-size: 24px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Style the container for the columns */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f5f5f5; /* Light gray background color */
+        padding: 20px;
+    }
+    
+    /* Style each column */
+    .column {
+        flex: 1;
+        padding: 20px;
+        background-color: #fff; /* White background color */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the columns */
+        text-align: center;
+        color: #888;
+    }
+    
+    /* Column */
+    .column h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    /* Style paragraph text */
+    .column p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .hoverable-paragraph {
+        font-size: 16px;
+        color: #333; /* Default text color */
+        cursor: pointer; /* Change the cursor to a pointer on hover */
+        transition: color 0.3s; /* Add a smooth color transition effect */
+    }
+    
+    /* Apply the hover effect */
+    .hoverable-paragraph:hover {
+        color: #f00; /* Change the text color on hover to red (#f00) */
+    }
+   
+    
+    
+    
+    
+    

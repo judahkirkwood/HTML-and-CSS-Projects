@@ -1,0 +1,11 @@
+p {
+    font-size: 16px;
+    color: black; /* Default font color */
+  }
+  
+  /* Media query for screens smaller than 600px */
+  @media (max-width: 600px) {
+    p {
+      color: blue; /* Font color for screens smaller than 600px */
+    }
+  }
