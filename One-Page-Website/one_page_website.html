@@ -1,173 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Custom Whiskey Cabinets </title>
-		<link rel="stylesheet" href="../One-Page-Website/css/one-page-style.css">
-		<link rel="stylesheet" href="../One-Page-Website/css/one-page-animation.css">
-		<script src="./js/one_page_website.js" defer></script>
-		
-	</head>
-	<body>
-		<!--NAV-->
-		<div class="wrap">
-			<div class="menu-container">
-				<ul class="menu">
-					<a href="#home"><li>HOME</li></a>
-					<a href="#gallery"><li>GALLERY</li></a>
-					<a href="#contact"><li>CONTACT</li></a>
-				</ul>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Custom Whiskey Cabinets </title>
+	<link rel="stylesheet" href="css/one-page-animation.css">
+	<link rel="stylesheet" href="css/one-page-style.css">
+	<script src="./js/one_page_website.js" defer></script>
+
+</head>
+
+<body>
+	<!--NAV-->
+	<div class="wrap">
+		<div class="menu-container">
+			<ul class="menu">
+				<a href="#home">
+					<li>HOME</li>
+				</a>
+				<a href="#gallery">
+					<li>GALLERY</li>
+				</a>
+				<a href="#contact">
+					<li>CONTACT</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+	<!--END NAV-->
+
+	<!-- HOME -->
+	<div id="home">
+		<div class="container">
+			<div class="text-center">
+				<span class="head-main">PNW Custom Whiskey Cabinets</span>
 			</div>
 		</div>
-		<!--END NAV-->
-		
-		<!-- HOME -->
-		<div id="home">
-			<div class="container">
-				<div class="text-center">
-					<span class="head-main">PNW Custom Whiskey Cabinets</span>
+	</div>
+	<!-- END HOME -->
+
+
+	<!-- GALLERY -->
+	<section id="gallery">
+		<div class="container">
+			<h1>Gallery</h1>
+			<div class="flex-container">
+
+
+				<!--PHOTO CONTAINER 1-->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="./one_page_images/thumbnail_12.jpg" alt="">
+						<div class="photo-overlay" onclick="openLightbox('./one_page_images/thumbnail_12.jpg')"></div>
+
+					</div>
 				</div>
-			</div>
-		</div>
-		<!-- END HOME -->
 
+				<!--END PHOTO CONTAINER 1-->
 
-		<!-- GALLERY -->
-		<section id="gallery">
-			<div class="container">
-				<h1>Gallery</h1>
-					<div class="flex-container">
+				<!--PHOTO CONTAINER 2-->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="./one_page_images/thumbnail_13.jpg" alt="">
+						<div class="photo-overlay" onclick="openLightbox('./one_page_images/thumbnail_13.jpg')"></div>
 
-					
-					<!--PHOTO CONTAINER 1-
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./one_page_images/thumbnail_12.jpg" alt="">
-							<div class="photo-overlay" onclick="openLightbox('./one_page_images/thumbnail_12.jpg')"></div>
-								
-							</div>
-						</div>
-					
-		<!--END PHOTO CONTAINER 1-->
-		
-		<!--PHOTO CONTAINER 2--
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./one_page_images/thumbnail_13.jpg" alt="">
-							<div class="photo-overlay" onclick="openLightbox('./one_page_images/thumbnail_13.jpg')"></div>
-					
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		
-		<!--PHOTO CONTAINER 2-->
+		</div>
 
-		<!-- Images used to open the lightbox -->
+	</section>
 
-		<div class="row">
-			<div class="column">
-			  <img src="./one_page_images/thumbnail_12.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-			</div>
+	<!--PHOTO CONTAINER 2-->
+
+	<!-- Images used to open the lightbox -->
+
+	<div class="row">
+		<div class="column">
+			<img src="./one_page_images/thumbnail_12.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+				class="hover-shadow cursor">
+		</div>
 
 		<div class="column">
-			<img src="./one_page_images/thumbnail_13.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			<img src="./one_page_images/thumbnail_13.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
+				class="hover-shadow cursor">
 		</div>
-		
-		<!-- The Modal/Lightbox -->
-		<div id="myModal" class="modal">
-			<span class="close cursor" onclick="closeModal()">&times;</span>
-			<div class="modal-content">
-		  
-			  <div class="mySlides">
+	</div>
+	<!-- The Modal/Lightbox -->
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+			<div class="mySlides">
 				<div class="numbertext">1 / 2</div>
 				<img src="./one_page_images/thumbnail_12.jpg" style="width:100%">
-			  </div>
-		  
-			  <div class="mySlides">
+			</div>
+
+			<div class="mySlides">
 				<div class="numbertext">2 / 2</div>
 				<img src="./one_page_images/thumbnail_13.jpg" style="width:100%">
-			  </div>
-		
+			</div>
+
 
 			<!-- Next/previous controls -->
-    		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    		<!-- Caption text -->
+			<!-- Caption text -->
 			<div class="caption-container">
 				<p id="caption"></p>
 			</div>
 
 			<!-- Thumbnail image controls -->
 			<div class="column">
-				<img class="demo" src="./one_page_images/thumbnail_12.jpg" onclick="currentSlide(1)" alt="Cabinet 1">
+				<img class="demo" width="100%" src="./one_page_images/thumbnail_12.jpg" onclick="currentSlide(1)"
+					alt="Cabinet 1">
 			</div>
 
 			<div class="column">
-				<img class="demo" src="./one_page_images/thumbnail_13.jpg" onclick="currentSlide(2)" alt="Cabinet 2">
-			</div>
+				<img class="demo" width="100%" src="./one_page_images/thumbnail_13.jpg" onclick="currentSlide(2)"
+					alt="Cabinet 2">
 			</div>
 		</div>
+	</div>
 
-		<!-- END GALLERY -->
-					
-		<!-- Video -->
-		<br>
-		<br>
-		<br>
-		<br>
+	<!-- END GALLERY -->
 
-		<p><h2><center>Here is how we make our cabinets.</center></h2></p>
+	<!-- Video -->
+	<br>
+	<br>
+	<br>
+	<br>
 
-		<br>
-		<br>
+	<p>
+	<h2>
+		<center>Here is how we make our cabinets.</center>
+	</h2>
+	</p>
 
-				<center><iframe width="703" height="395" src="https://www.youtube.com/embed/HBKra8ZiFhk" 
-				title="How to Build a Mid Century Modern Liquor Bar // Woodworking" frameborder="0" 
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-				web-share" allowfullscreen></iframe></center>	
-		
-		<!-- END VIDEO -->
+	<br>
+	<br>
 
-		<!-- CONTACT -->
-		<section id="contact">
-			<div class="heading-padding">
-				<h1 class="heading-padding">Contact</h1>
-				<div class="reservation">
-					<h2>
-						<span>Your cabinet to show off your collection awaits.</span>
-						</br>Contact us today to let us know how we can help your cabinet dreams come true!
-					</h2>
-					<p class="rsvp-text"><center>Enter contact information below.</center></p>
-					<div class="form-rsvp">
-						<form action="" method="post">
-							<input class="rsvp" type="text" value="First Name">
-							<input class="rsvp" type="text" value="Last Name">
-							<input class="rsvp" type="text" value="Email Address">
-							<input class="rsvp" type="text" value="Phone Number">
-							<div class="form-spacer">
-								<label class="terms">Terms and Conditions</label>
-							</div>
-							<div class="submit">
-								<input type="submit" value="submit">
-							</div>
-						</form>
-					</div>
+	<center><iframe width="703" height="395" src="https://www.youtube.com/embed/HBKra8ZiFhk"
+			title="How to Build a Mid Century Modern Liquor Bar // Woodworking" frameborder="0" allow="accelerometer; autoplay; 
+			clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+
+	<!-- END VIDEO -->
+
+	<!-- CONTACT -->
+	<section id="contact">
+		<div class="heading-padding">
+			<h1 class="heading-padding">Contact</h1>
+			<div class="reservation">
+				<h2>
+					<span>Your cabinet to show off your collection awaits.</span>
+					</br>Contact us today to let us know how we can help your cabinet dreams come true!
+				</h2>
+				<p class="rsvp-text">
+					<center>Enter contact information below.</center>
+				</p>
+				<div class="form-rsvp">
+					<form action="" method="post">
+						<input class="rsvp" type="text" value="First Name">
+						<input class="rsvp" type="text" value="Last Name">
+						<input class="rsvp" type="text" value="Email Address">
+						<input class="rsvp" type="text" value="Phone Number">
+						<div class="form-spacer">
+							<label class="terms">Terms and Conditions</label>
+						</div>
+						<div class="submit">
+							<input type="submit" value="submit">
+						</div>
+					</form>
 				</div>
 			</div>
-		</section>
-		<!-- END CONTACT -->
-
-		<br>
-		<br>
-		<!-- FOOTER -->
-		<div id="footer">
-			www.pnwcustomwhiskeycabinets.com &nbsp;|&nbsp; &copy;PNW Custom Whiskey Cabinets 2023
 		</div>
-		<!-- END FOOTER-->
-		
-	</body>
+	</section>
+	<!-- END CONTACT -->
+	
+	<br>
+	<br>
+	<!-- FOOTER -->
+	<div id="footer">
+		www.pnwcustomwhiskeycabinets.com &nbsp;|&nbsp; &copy;PNW Custom Whiskey Cabinets 2023
+	</div>
+	<!-- END FOOTER-->
+
+</body>
+
 </html>
