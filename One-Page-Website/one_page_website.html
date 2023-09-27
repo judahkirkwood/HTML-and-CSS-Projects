@@ -39,7 +39,7 @@
 					<div class="flex-container">
 
 					
-					<!--PHOTO CONTAINER 1-->
+					<!--PHOTO CONTAINER 1-
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./one_page_images/thumbnail_12.jpg" alt="">
@@ -50,7 +50,7 @@
 					
 		<!--END PHOTO CONTAINER 1-->
 		
-		<!--PHOTO CONTAINER 2-->
+		<!--PHOTO CONTAINER 2--
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./one_page_images/thumbnail_13.jpg" alt="">
@@ -65,10 +65,51 @@
 		
 		<!--PHOTO CONTAINER 2-->
 
-		<!-- Lightbox modal -->
-		<div id="lightbox-modal" class="lightbox-modal">
-			<span class="close-button" onclick="closeLightbox(&times;)">&times;</span>
-			<img id="lightbox-image" class="lightbox-content" src="" alt="">
+		<!-- Images used to open the lightbox -->
+
+		<div class="row">
+			<div class="column">
+			  <img src="./one_page_images/thumbnail_12.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			</div>
+
+		<div class="column">
+			<img src="./one_page_images/thumbnail_13.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+		</div>
+		
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		  
+			  <div class="mySlides">
+				<div class="numbertext">1 / 2</div>
+				<img src="./one_page_images/thumbnail_12.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 2</div>
+				<img src="./one_page_images/thumbnail_13.jpg" style="width:100%">
+			  </div>
+		
+
+			<!-- Next/previous controls -->
+    		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    		<!-- Caption text -->
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<!-- Thumbnail image controls -->
+			<div class="column">
+				<img class="demo" src="./one_page_images/thumbnail_12.jpg" onclick="currentSlide(1)" alt="Cabinet 1">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./one_page_images/thumbnail_13.jpg" onclick="currentSlide(2)" alt="Cabinet 2">
+			</div>
+			</div>
 		</div>
 
 		<!-- END GALLERY -->
